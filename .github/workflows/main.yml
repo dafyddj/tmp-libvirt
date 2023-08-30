@@ -8,3 +8,5 @@ jobs:
     steps:
       - run: brew install tmux
       - uses: dafyddj/action-sshd-cloudflared@master
+      - if: ${{ failure() }}
+        uses: mxschmitt/action-tmate@v3
