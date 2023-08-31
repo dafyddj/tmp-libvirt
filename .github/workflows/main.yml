@@ -5,7 +5,7 @@ jobs:
   test-linux:
     runs-on: buildjet-2vcpu-ubuntu-2204
     steps:
-      - uses: valeriangalliat/action-sshd-cloudflared@v1
+      - uses: dafyddj/action-sshd-cloudflared@tmp/debug-buildjet
       - if: ${{ failure() }}
         uses: mxschmitt/action-tmate@v3
   test-mac:
