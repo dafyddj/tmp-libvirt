@@ -5,9 +5,9 @@ jobs:
   test-linux:
     runs-on: buildjet-2vcpu-ubuntu-2204
     steps:
-      - uses: valeriangalliat/action-sshd-cloudflared@v1
-      - if: ${{ failure() }}
-        uses: mxschmitt/action-tmate@v3
+#      - uses: valeriangalliat/action-sshd-cloudflared@v1
+#      - if: ${{ failure() }}
+       - uses: mxschmitt/action-tmate@v3
   test-mac:
     runs-on: macos-12
     timeout-minutes: 1
